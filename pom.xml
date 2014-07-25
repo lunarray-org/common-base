@@ -29,8 +29,7 @@
 	<parent>
 		<groupId>org.lunarray.common</groupId>
 		<artifactId>parent</artifactId>
-		<version>1-SNAPSHOT</version>
-		<relativePath>../parent</relativePath>
+		<version>1</version>
 	</parent>
 
 	<scm>
@@ -44,7 +43,7 @@
 			<dependency>
 				<artifactId>bom</artifactId>
 				<groupId>org.lunarray.common</groupId>
-				<version>1.0-SNAPSHOT</version>
+				<version>1.0</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -55,7 +54,7 @@
 		<dependency>
 			<artifactId>bom</artifactId>
 			<groupId>org.lunarray.common</groupId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
