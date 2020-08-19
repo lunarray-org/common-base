@@ -46,6 +46,27 @@
 		</repository>
 	</distributionManagement>
 
+	  <repositories>
+		<repository>
+			<releases>
+				<enabled>false</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<name>Snapshots</name>
+			<id>github-lunarray-common-parent</id>
+			<url>https://maven.pkg.github.com/lunarray-org/common-parent</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+	
+	
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
