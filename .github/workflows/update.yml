@@ -18,6 +18,6 @@ jobs:
       - name: Debug settings
         run: cat /home/runner/.m2/settings.xml
       - name: Publish package
-        run: mvn -B -X -e deploy
+        run: mvn -B -X -e clean deploy
         env:
           GITHUB_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
