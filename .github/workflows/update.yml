@@ -16,6 +16,6 @@ jobs:
           servers: '[{ "id": "github-lunarray-common-parent", "username": "${{ secrets.PACKAGE_USER }}", "password": "${{ secrets.PACKAGE_TOKEN }}" }]'
           repositories: '[{ "id": "github-lunarray-common-parent", "name": "Common Parent", "url": "https://maven.pkg.github.com/lunarray-org/common-parent", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } }]'
       - name: Publish package
-        run: mvn -B deploy
+        run: mvn -B -X deploy
         env:
           GITHUB_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
