@@ -37,6 +37,13 @@
 		<developerConnection>scm:git:ssh://git@github.com/lunarray-org/common-base.git</developerConnection>
 		<url>https://github.com/lunarray-org/common-base</url>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/lunarray-org/common-base</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
