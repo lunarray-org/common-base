@@ -13,7 +13,7 @@ jobs:
       - name: maven-settings-xml-action
         uses: whelk-io/maven-settings-xml-action@v11
         with:
-          servers: '[{ "id": "github-lunarray-common-parent", "username": "some.user", "${{ secrets.PACKAGE_USER }}": "${{ secrets.PACKAGE_TOKEN }}" }]'
+          servers: '[{ "id": "github-lunarray-common-parent", "username": "${{ secrets.PACKAGE_USER }}", "password": "${{ secrets.PACKAGE_TOKEN }}" }]'
       - name: Publish package
         run: mvn -B deploy
         env:
